@@ -5,7 +5,7 @@ import NoteContext from "./noteContext";
 // import noteContext from "./NoteContext";
 
 const NoteState = (props) => {
-  const host = "http://localhost:5000"
+  const host = ""
 
   const notesInitial = []
 
