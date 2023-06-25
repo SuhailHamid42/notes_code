@@ -13,7 +13,7 @@ const Signup = () => {
     e.preventDefault();
 
     const {name, email, password} = credentials;
-    const response = await fetch("http://localhost:5000/api/auth/register", {
+    const response = await fetch(`${host}/api/auth/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

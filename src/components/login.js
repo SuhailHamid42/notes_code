@@ -6,7 +6,7 @@ import Notes from './Notes';
 const Login = () => {
   //     const [credentials, setcredentials] = useState({ email: "", password: "" })
 
-
+  const host = ""
 
   const navigate = useNavigate();
 
@@ -31,7 +31,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:5000/api/auth/login", {
+    const response = await fetch(`${host}/api/auth/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
