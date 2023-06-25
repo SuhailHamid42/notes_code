@@ -5,7 +5,8 @@ import NoteContext from "./noteContext";
 // import noteContext from "./NoteContext";
 
 const NoteState = (props) => {
-  const host = ""
+  // const host = "http://localhost:5000"
+  const host = "https://mern-notes-app-6ek8.onrender.com"
 
   const notesInitial = []
 
