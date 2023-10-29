@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken');      // To give token to user
 var fetchuser = require('../middleware/fetchuser');
 
 
-const JWT_SECRET = "Harryisagoodb$oy";
+const JWT_SECRET = "Thenameof$oy";
 // const {getAllProducts, getAllProductsTesting} = require("../models/User");
 
 // router.route("/").get(getAllProducts);

@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 const Signup = () => {
       const [credentials, setcredentials] = useState({name: "", email: "", password: "", cpassword : "" })
 
-// const host = "http://localhost:5000"
-const host = "https://mern-notes-app-6ek8.onrender.com"
+const host = "http://localhost:5000"
+// const host = "https://mern-notes-app-6ek8.onrender.com"
 
 
   const navigate = useNavigate();
@@ -43,7 +43,10 @@ const host = "https://mern-notes-app-6ek8.onrender.com"
 
   return (
     <div>
+      <div className="container my-5">
+
     <form onSubmit={handleSubmit}>
+
 <div className="mb-3">
   <label htmlFor = "exampleInputEmail1" className="form-label">Name</label>
   <input type="text" className="form-control" id="name" name='name' onChange={onChange} aria-describedby="emailHelp"/>
@@ -64,9 +67,13 @@ const host = "https://mern-notes-app-6ek8.onrender.com"
   <input type="password" className="form-control" id="cpassword" name='cpassword'  onChange={onChange} minLength={5} required/>
 </div>
 
+<div className='text-center'>
 
 <button type="submit" className="btn btn-primary">Submit</button>
+</div>
 </form>
+</div>
+
   </div>
   )
 }

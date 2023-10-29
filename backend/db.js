@@ -22,7 +22,7 @@ const connectToMongo = () => {
     .catch((err) => {console.error(err);});
 }
 
-module.exports = connectToMongo;
+module.exports = connectToMongo;  
 
 // mongodb project1 password Gs8EouT9vGN3WBfS and username suhailhamid608
 // mongodb password a03WgkMJB4IRx1HG

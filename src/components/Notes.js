@@ -86,10 +86,6 @@ const onChange = (e) => {
     <input type="text" className ="form-control"  value={note.edescription}  id="edescription" name='edescription' onChange={onChange} minLength={5} required/>
   </div>
 
-  <div className ="mb-3">
-    <label htmlFor="tag" className ="form-label">Tag</label>
-    <input type="text" className ="form-control" id="etag" name='etag' value={note.etag}  onChange={onChange} minLength={5} required/>
-  </div>
 
 </form>
             </div>
@@ -101,9 +97,9 @@ const onChange = (e) => {
           </div>
         </div>
       </div>
-      <div className='row my-3'>
-        <h2>Your Notes</h2>
-        <div className="container">
+      <div className='row mb-5 container my-7'>
+        <h2 className='text-center'>Your Notes</h2>
+        <div className="container mx-3">
         {notes.length === 0 && "No Notes To Display"}
         </div>
         {notes.map((note) => {

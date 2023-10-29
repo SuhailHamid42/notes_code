@@ -23,9 +23,9 @@ const Noteitem = (props) => {
                     <div className = "card-body">
                         <div className="d-flex align-items-center">
                         <h5 className = "card-title">{note.title}</h5>
-                        {/* <i className = "fa-solid fa-trash mx-2" onClick={()=>{deleteNote(note._id)}}></i> */}
-                        <i className="bi bi-trash" onClick={()=>{deleteNote(note._id)}}></i>
-                        <i className = "bi bi-pencil-square" onClick={() => {updateNote(note)}}></i>
+                        <i className = "fa-regular fa-trash-can mx-2" onClick={()=>{deleteNote(note._id)}}></i>
+                        {/* <i className="bi bi-trash" onClick={()=>{deleteNote(note._id)}}></i> */}
+                        <i className = "fa-regular fa-pen-to-square mx-2" onClick={() => {updateNote(note)}}></i>
 
                         {/* <button type="button" className="btn btn-link"><span className="bi bi-pencil-square"></span></button> */}
                         

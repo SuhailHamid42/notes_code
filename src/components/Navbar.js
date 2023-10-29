@@ -15,6 +15,15 @@ const Navbar = () => {
     navigate("/");
 
   }
+  let hrefValue;
+  let hrefcondition = localStorage.getItem('authToken');
+  if(!hrefcondition){
+    hrefValue = "/";
+  }
+  else
+  {
+    hrefValue = "/Notes";
+  }
 
   // let location = useLocation();
 
@@ -22,7 +31,8 @@ const Navbar = () => {
     <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="/">Home</a>
+
+    <a className="navbar-brand" href={hrefValue}>Home</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -31,7 +41,8 @@ const Navbar = () => {
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="/About">About</a>
         </li>
-
+      </ul>
+</div>
     <ul>
         {!localStorage.getItem('authToken')?<form className = "d-flex">
         <a className = "btn btn-primary mx-1" href='/Login' role="button">Login</a>
@@ -41,10 +52,9 @@ const Navbar = () => {
       </ul>
 
       
-      </ul>
-    
-    </div>
-  </div>
+      </div>
+
+
 </nav>
     </div>
   )

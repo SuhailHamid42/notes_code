@@ -6,8 +6,8 @@ import Notes from './Notes';
 const Login = () => {
   //     const [credentials, setcredentials] = useState({ email: "", password: "" })
 
-  // const host = "http://localhost:5000"
-  const host = "https://mern-notes-app-6ek8.onrender.com"
+  const host = "http://localhost:5000"
+  // const host = "https://mern-notes-app-6ek8.onrender.com"
 
 
   const navigate = useNavigate();
@@ -67,20 +67,33 @@ const Login = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-      <div className="form-group">
+            <div className="text-center my-4">
+        <h1>NOTEBOOK</h1>
+        <p>
+          <b>Your notes on cloud ☁️</b>
+        </p>
+      </div>
+      <div className="container my-9">
+    <div className="mb-3 ">
+      <form className='formStyles' onSubmit={handleSubmit}>
+      <div className="form-group mb-4">
         <label htmlFor="email">Email address</label>
         <input type="email" className="form-control" value={credentials.email} id="email" onChange={onChange} name='email' aria-describedby="emailHelp" placeholder="Enter email" />
-        <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
-      <div className="form-group">
+      <div className="form-group mb-4">
         <label htmlFor="password">Password</label>
         <input type="password" className="form-control" value={credentials.password} id="password" onChange={onChange} name='password' placeholder="Password" />
       </div>
-
+  
+      <div className="text-center">
   <button type="submit" className="btn btn-primary">Submit</button>
+  </div>
 </form>
+</div>
+</div>
+
     </div>
+
   )
 }
 
