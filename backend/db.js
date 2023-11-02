@@ -5,7 +5,8 @@ mongoose.set('strictQuery', false);
 // const mongoURI = "mongodb+srv://suhailhamid608:Gs8EouT9vGN3WBfS@cluster1.us0tjco.mongodb.net/?retryWrites=true&w=majority"
 // const mongoURI = "mongodb+srv://suhailhamid71:a03WgkMJB4IRx1HG@cluster0.1xvndpy.mongodb.net/?retryWrites=true&w=majority"
 // const mongoURI = "mongodb+srv://suhailhamid71:6VL8kmNWQcYAr1sq@cluster0.thj8kip.mongodb.net/?retryWrites=true&w=majority"
-const mongoURI = "mongodb+srv://suhail:suhail@cluster0.ismtpw2.mongodb.net/?retryWrites=true&w=majority"
+// const mongoURI = "mongodb+srv://suhail:suhail@cluster0.ismtpw2.mongodb.net/?retryWrites=true&w=majority"
+const mongoURI = process.env.MONGO_URI
 
 
 

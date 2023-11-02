@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 const Signup = () => {
       const [credentials, setcredentials] = useState({name: "", email: "", password: "", cpassword : "" })
 
-const host = "http://localhost:5000"
-// const host = "https://mern-notes-app-6ek8.onrender.com"
+// const host = "http://localhost:5000"
+const host = "https://notesbackend-dy98.onrender.com"
 
 
   const navigate = useNavigate();
