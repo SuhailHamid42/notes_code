@@ -27,7 +27,7 @@ function App() {
     {/* <Navbar/> */}
     {/* <h1 style={{textAlign:'center'}} >I will make login and signup page and I will learn how it works</h1> */}
     <NoteState>
-    <BrowserRouter basename="/notes_code">
+    <BrowserRouter basename="">
     <Navbar/>
 
     <Routes>
