@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Login from './components/login';
 import Home from './components/Home';
 import Signup from './components/signup';
@@ -29,6 +31,7 @@ function App() {
     <Navbar/>
 
     <Routes>
+
       <Route path="/" element={<Home />}/>
 
         <Route path="/Login" element={<Login />} />
@@ -37,8 +40,6 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Noteitem" element={<Noteitem />} />
         <Route path="/AddNote" element={<AddNote />} />
-
-
 
 
 
