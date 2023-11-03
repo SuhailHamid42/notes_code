@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/notes_code/static/css/main.1ca2ba59.css",
-    "main.js": "/notes_code/static/js/main.0de53276.js",
-    "static/media/logo.svg": "/notes_code/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/notes_code/index.html",
-    "main.1ca2ba59.css.map": "/notes_code/static/css/main.1ca2ba59.css.map",
-    "main.0de53276.js.map": "/notes_code/static/js/main.0de53276.js.map"
+    "main.css": "/SuhailHamid42.github.io/notes_code/static/css/main.1ca2ba59.css",
+    "main.js": "/SuhailHamid42.github.io/notes_code/static/js/main.a7281541.js",
+    "static/media/logo.svg": "/SuhailHamid42.github.io/notes_code/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/SuhailHamid42.github.io/notes_code/index.html",
+    "main.1ca2ba59.css.map": "/SuhailHamid42.github.io/notes_code/static/css/main.1ca2ba59.css.map",
+    "main.a7281541.js.map": "/SuhailHamid42.github.io/notes_code/static/js/main.a7281541.js.map"
   },
   "entrypoints": [
     "static/css/main.1ca2ba59.css",
-    "static/js/main.0de53276.js"
+    "static/js/main.a7281541.js"
   ]
 }
