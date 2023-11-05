@@ -1,6 +1,4 @@
-## My Awesome Project
-
-Welcome to my awesome project! You can check it out live [here](suhailhamidnotes.netlify.app).
+ [here](suhailhamidnotes.netlify.app).
 
 
 # Getting Started with Create React App
